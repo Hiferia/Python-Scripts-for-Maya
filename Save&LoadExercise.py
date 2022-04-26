@@ -60,8 +60,6 @@ def load_animation(entry):
         for attr in attributes:           
             if attr.startswith("translate") or attr.startswith("rotate"):
                 cmds.setAttr(f"{control}.{attr}", data[i])
-            elif attr.startswith("scale"):
-                cmds.setAttr(f"{control}.{attr}", data[i])
             i+=1           
             
 items = cmds.ls("*_ac_*", "*_fk_*")
