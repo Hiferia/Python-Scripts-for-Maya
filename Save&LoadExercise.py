@@ -64,6 +64,7 @@ def load_animation(entry):
             
 items = cmds.ls("*_ac_*", "*_fk_*")
 
+ui = "MyUI"
 if cmds.window(ui, q=True, ex=True):
     cmds.deleteUI(ui)
 
